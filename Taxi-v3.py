@@ -2,6 +2,11 @@ import gym
 import numpy as np
 from gym import envs
 
+
+
+#### VALUE ITERATION ALGORITHM
+
+
 env = gym.make('Taxi-v3')
 NUM_ACTIONS= env.action_space.n
 NUM_STATES= env.observation_space.n
@@ -52,7 +57,7 @@ while True:
         iteration += 1
 
         if biggest_change < significant_improvement:
-            print(iteration, 'iterations were done')
+            #print(iteration, 'iterations were done')
             break
 
 

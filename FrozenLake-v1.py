@@ -10,12 +10,12 @@ States = env.observation_space.n
 
 Q= np.zeros((States, Actions))
 Q
-Episodes= 20000
+Episodes= 10000
 Max_steps= 100
-Learning_rate= 0.70
+Learning_rate= 0.01
 Gamma= 0.96
 
-epsilon= 0.9
+epsilon= 0.1
 
 RENDER= True
 rewards= []
