@@ -14,6 +14,7 @@ The agent is rewarded for finding a walkable path to a goal tile.
 Q-Learning is a basic form of Reinforcement Learning which uses Q-values (also called action values) to iteratively improve the behavior of the learning agent.
 
 # New Q(s,a) = (1 - learning_rate) x Q(s,a) + learning_rate x [ reward + discount_rate x maxQ(s',a')]
+
 s : Current State of the agent.
 
 a : Current Action Picked according to some policy.
