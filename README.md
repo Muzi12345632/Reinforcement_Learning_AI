@@ -67,3 +67,22 @@ while done != True:
 With probability (1-  ϵ  ) choose the action which has the highest Q-value.
 
 With probability ( ϵ ) choose any action at random.
+<br>
+<br>
+<br>
+Using value iteration approach to exploit the enviroment
+
+```
+
+rew_total=0
+obs= env.reset()
+env.render()
+done= False
+while done != True:
+    action= np.argmax(Q[obs])
+    obs, rew, done,info= env.step(action)
+    rew_total= rew_total + rew
+    env.render()
+print("Reward : %r" % rew_total)
+```
+
