@@ -53,6 +53,14 @@ Since Q-value is an estimation of expected rewards from a state, discounting rul
 # Exploration vs Exploitation
 
 Choosing the Action to take using 𝜖 -greedy policy:
+```
+
+while done != True:
+        if np.random.rand(1) < epsilon:
+            action= env.action_space.sample()
+        else:
+            action= np.argmax(Q[observation])
+```
 
 𝜖 -greedy policy of is a very simple policy of choosing actions using the current Q-value estimations. It goes as follows :
 
