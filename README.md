@@ -12,6 +12,17 @@ Some tiles of the grid are walkable, and others lead to the agent falling into t
 Additionally, the movement direction of the agent is uncertain and only partially depends on the chosen direction. 
 The agent is rewarded for finding a walkable path to a goal tile.
 
+# Dependances
+
+Install OpenAI library gym for games using `pip`:
+ ```
+ 
+ pip install gym
+ pip install tensorflow
+ pip install matplotlib
+ 
+ 
+ ```
 
 # Q-Learning Equation
 
