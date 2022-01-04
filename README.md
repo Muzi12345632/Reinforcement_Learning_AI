@@ -1,5 +1,9 @@
 # Reinforcement_Learning_AI
 Reinforcement AI
+[![PyPI version](https://badge.fury.io/py/TwitterFollowBot.svg)](https://badge.fury.io/py/TwitterFollowBot)
+![Python 2.7](https://img.shields.io/badge/python-2.7-blue.svg)
+![Python 3.5](https://img.shields.io/badge/python-3.5-blue.svg)
+![License](https://img.shields.io/badge/license-GPLv3-blue.svg)
 
 # FrozenLake Problem
 
