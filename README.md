@@ -1,5 +1,5 @@
 # Reinforcement_Learning_AI
-Reinforcement AI
+
 [![PyPI version](https://badge.fury.io/py/TwitterFollowBot.svg)](https://badge.fury.io/py/TwitterFollowBot)
 ![Python 2.7](https://img.shields.io/badge/python-2.7-blue.svg)
 ![Python 3.5](https://img.shields.io/badge/python-3.5-blue.svg)
@@ -20,7 +20,7 @@ Install OpenAI library gym for games using `pip`:
  pip install gym
  pip install tensorflow
  pip install matplotlib
- 
+   
  
  ```
 
@@ -29,6 +29,11 @@ Install OpenAI library gym for games using `pip`:
 Q-Learning is a basic form of Reinforcement Learning which uses Q-values (also called action values) to iteratively improve the behavior of the learning agent.
 
 # New Q(s,a) = (1 - learning_rate) x Q(s,a) + learning_rate x [ reward + discount_rate x maxQ(s',a')]
+ 
+ ```
+ 
+ Q[observation, action]  += alpha*(reward+ gamma* np.max(Q[observation2])- Q[observation, action])
+ ```
 
 s : Current State of the agent.
 
