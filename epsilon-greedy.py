@@ -34,11 +34,12 @@ for episode in range(1, 500001):
                 action = np.argmax(Q[observation])
                 observation, reward, done,info= env.step(action)
                 reward_average += reward
-
+        env.render()
         reward_average= reward_average/100
         print('Episode {} average reward: {}'.format(episode, reward_average))
 
         if reward_average > 0.8:
             print('FrozenLake solved')
+
             break
 
