@@ -3,11 +3,10 @@ import numpy as np
 from gym import envs
 
 
-
 #### VALUE ITERATION ALGORITHM
 
 
-env = gym.make('Taxi-v3')
+env = gym.make('FrozenLake8x8-v1')
 NUM_ACTIONS= env.action_space.n
 NUM_STATES= env.observation_space.n
 V= np.zeros([NUM_STATES])
@@ -17,7 +16,7 @@ rew_total= 0
 observation= env.reset()
 #observation= env.reset()
 #done= False
-env.render()
+#env.render()
 #for _ in range (6):
     #action= env.action_space.sample()
     #observation, reward, done, info = env.step(action)
@@ -26,7 +25,7 @@ env.render()
 
 
 gamma= 0.9
-significant_improvement= 0.01
+significant_improvement= 0.5
 
 #find highest value action in state s
 def best_action_value(s):
@@ -62,7 +61,7 @@ while True:
 
 
     rew_total= 0
-    env.render()
+    #env.render()
     observation= env.reset()
     done= False
 
