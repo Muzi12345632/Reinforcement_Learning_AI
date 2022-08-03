@@ -1,0 +1,6 @@
+##required packages
+
+numpy
+gym
+tensorflow
+
