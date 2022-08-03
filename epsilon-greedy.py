@@ -1,7 +1,7 @@
 import gym
 import numpy as np
 
-env= gym.make('FrozenLake-v1')
+env= gym.make('FrozenLake8x8-v1')
 env.reset()
 NUM_ACTIONS= env.action_space.n
 NUM_STATES= env.observation_space.n
@@ -9,7 +9,7 @@ Q= np.zeros([NUM_STATES, NUM_ACTIONS])
 
 gamma= 0.95
 alpha= 0.01 #learning rate
-epsilon= 0.1
+epsilon= 0.5
 
 for episode in range(1, 500001):
     done= False
@@ -38,7 +38,7 @@ for episode in range(1, 500001):
         reward_average= reward_average/100
         print('Episode {} average reward: {}'.format(episode, reward_average))
 
-        if reward_average > 0.8:
+        if reward_average > 0.9:
             print('FrozenLake solved')
 
             break
