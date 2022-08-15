@@ -15,7 +15,7 @@ Q= np.zeros([NUM_STATES, NUM_ACTIONS])
 gamma= 0.9
 alpha=0.1 #learning rate
 
-for episode in range(1, 10001):
+for episode in range(1, 50001):
     done= False
     reward_total=0
     observation= env.reset()

@@ -5,7 +5,7 @@ import time
 ##TODO install mujoco_py module
 
 game= gym.envs.registry
-env= gym.make('FrozenLake8x8-v1')
+env= gym.make('Blackjack-v1')
 NUM_ACTIONS= env.action_space
 NUM_STATES= env.observation_space
 V= np.zeros_like([NUM_STATES])
@@ -15,7 +15,7 @@ observation= env.reset()
 
 
 #env.render()
-for _ in range (2):
+for _ in range (200):
     action= env.action_space.sample()
     observation, reward, done, info = env.step(action)
     reward_total= rew_total+ reward

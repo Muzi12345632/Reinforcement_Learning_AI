@@ -1,7 +1,7 @@
 import gym
 import numpy as np
 
-env= gym.make('FrozenLake8x8-v1')
+env= gym.make('FrozenLake8x8-v1', render_mode='human')
 env.reset()
 NUM_ACTIONS= env.action_space.n
 NUM_STATES= env.observation_space.n
