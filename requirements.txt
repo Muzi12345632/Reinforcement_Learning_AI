@@ -1,6 +1,4 @@
 ##required packages
-
+pygame
 numpy
 gym
-tensorflow
-
