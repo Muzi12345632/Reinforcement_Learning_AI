@@ -5,6 +5,7 @@ pipeline {
             steps {
                 //
               echo 'Build'
+              sh 'virtualenv venv && . venv/bin/activate'
               sh 'pip install -r requirements.txt'
             }
         }
